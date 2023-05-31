@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Escalá - DB Scaling on Kubernetes</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- ======== preloader start ======== -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="spinner">
+        <div class="spinner-container">
+          <div class="spinner-rotator">
+            <div class="spinner-left">
+              <div class="spinner-circle"></div>
+            </div>
+            <div class="spinner-right">
+              <div class="spinner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- ======== header start ======== -->
+  <header class="header">
+    <div class="navbar-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo/escala-logo.png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="page-scroll active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#about">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#why">Tools and Technologies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#domain">Domain</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#team">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#Document"">Documents</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar collapse -->
+            </nav>
+            <!-- navbar -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- navbar area -->
+  </header>
+  <!-- ======== header end ======== -->
+
+  <!-- ======== hero-section start ======== -->
+  <section id=" home" class="hero-section">
+                      <div class="container">
+                        <div class="row align-items-center position-relative">
+                          <div class="col-lg-6">
+                            <div class="hero-content">
+                              <h1 class="wow fadeInUp" data-wow-delay=".4s">
+                                Seamless Postgress DB Scaling on Kubernetes
+                              </h1>
+                              <p class="wow fadeInUp" data-wow-delay=".6s">
+                                Commercially supported PostgreSQL on the Platform and
+                                Infrastructure of Your Choice.
+                              </p>
+                              <!-- <a href="javascript:void(0)" class="main-btn border-btn btn-hover wow fadeInUp"
+                                data-wow-delay=".6s">See
+                                Plans</a> -->
+                              <a href="#features" class="scroll-bottom">
+                                <i class="lni lni-arrow-down"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
+                              <img src="assets/img/hero/hero-img.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </section>
+                      <!-- ======== hero-section end ======== -->
+
+                      <!-- ======== feature-section start ======== -->
+                      <section id="features" class="feature-section pt-120">
+                        <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-8 col-sm-10">
+                              <div class="single-feature">
+                                <div class="icon">
+                                  <img
+                                    src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/000000/external-graph-cyber-monday-vitaliy-gorbachev-blue-vitaly-gorbachev.png" />
+                                </div>
+                                <div class="content">
+                                  <h3>Load Prediction</h3>
+                                  <p>
+                                    Self learning future requests pattern prediction algorithm
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-8 col-sm-10">
+                              <div class="single-feature">
+                                <div class="icon">
+                                  <img src="https://img.icons8.com/fluency/60/000000/active-directory.png" />
+                                </div>
+                                <div class="content">
+                                  <h3>Automatic Scaling</h3>
+                                  <p>
+                                    Automating the scaling of the PostgreSQL DB based on the prediction model output
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-8 col-sm-10">
+                              <div class="single-feature">
+                                <div class="icon">
+                                  <img src="https://img.icons8.com/office/60/000000/cloud-sync.png" />
+                                </div>
+                                <div class="content">
+                                  <h3>Realtime data sync</h3>
+                                  <p>
+                                    Realtime data sync between Postgres nodes to ensure the data consistency
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-8 col-sm-10">
+                              <div class="single-feature">
+                                <div class="icon">
+                                  <img src="https://img.icons8.com/fluency/60/000000/password-check.png" />
+                                </div>
+                                <div class="content">
+                                  <h3>Data Validation & Crash Recovery</h3>
+                                  <p>
+                                    Data validation and crash recovery for the PostgreSQL DB instances
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+              </div>
+              </section>
+              <!-- ======== feature-section end ======== -->
+
+              <!-- ======== about-section start ======== -->
+              <section id="about" class="about-section pt-150">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                      <div class="about-img">
+                        <!-- <img src="assets/img/about/about-1.png" alt="" class="w-100" /> -->
+                        <iframe width="560" height="315" class="w-90"
+                          src="https://www.youtube.com/embed/Oo5aKS7hoqE?controls=0" title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                        <img src="assets/img/about/about-left-shape.svg" alt="" class="shape shape-1" />
+                        <img src="assets/img/about/left-dots.svg" alt="" class="shape shape-2" />
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div class="about-content">
+                        <div class="section-title mb-30">
+                          <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                            Perfect Solution for PostgreSQL on Kubernetes
+                          </h2>
+                          <p class="wow fadeInUp" data-wow-delay=".4s">
+                            Escála simplifies scale so that you don't have to think about it. It distributes data and
+                            workload demand automatically. Get rid of manual replication and complicated workarounds.
+                            See the entire journey of Escála.
+                          </p>
+                        </div>
+                        <!-- <a href="javascript:void(0)" class="main-btn btn-hover border-btn wow fadeInUp"
+                          data-wow-delay=".6s">Discover More</a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- ======== about-section end ======== -->
+
+              <!-- ======== about2-section start ======== -->
+              <section id="about" class="about-section pt-150">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                      <div class="about-content">
+                        <div class="section-title mb-30">
+                          <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                            Easy to Use with Tons of Awesome Features
+                          </h2>
+                          <p class="wow fadeInUp" data-wow-delay=".4s">
+                            A fully managed Postgres service that allows you to choose your cloud provider without being
+                            locked in. Escála provides everything you need for a production-grade database, so you don't
+                            have to worry:
+                          </p>
+                        </div>
+                        <ul>
+                          <li>Quick Access</li>
+                          <li>Easily to Manage</li>
+                          <li>24/7 Availability</li>
+                        </ul>
+                        <!-- <a
+                href="javascript:void(0)"
+                class="main-btn btn-hover border-btn wow fadeInUp"
+                data-wow-delay=".6s"
+                >Learn More</a
+              > -->
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 order-first order-lg-last">
+                      <div class="about-img-2">
+                        <img src="assets/img/about/about-2.png" alt="" class="w-100" />
+                        <img src="assets/img/about/about-right-shape.svg" alt="" class="shape shape-1" />
+                        <img src="assets/img/about/right-dots.svg" alt="" class="shape shape-2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- ======== about2-section end ======== -->
+
+              <!-- ======== feature-section start ======== -->
+              <section id="why" class="feature-extended-section pt-100">
+                <div class="feature-extended-wrapper">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
+                        <div class="section-title text-center mb-60">
+                          <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                            Tools and Technologies
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="text-align: center;">
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="icon">
+                            <img src="./assets/img/tech-logos/k8s.png" alt="" width="100" />
+                          </div>
+                          <div class="content">
+                            <h3>Kubernetes</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="icon">
+                            <img src="./assets/img/tech-logos/prometheus.png" alt="" width="100" />
+                          </div>
+                          <div class="content">
+                            <h3>Prometheus</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="icon">
+                            <img src="./assets/img/tech-logos/keras.png" alt="" width="100" />
+                          </div>
+                          <div class="content">
+                            <h3>Keras</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="icon">
+                            <img src="./assets/img/tech-logos/postgres.png" alt="" width="100" />
+                          </div>
+                          <div class="content">
+                            <h3>PostgreSQL</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="icon">
+                            <img src="./assets/img/tech-logos/tf.png" alt="" width="100" />
+                          </div>
+                          <div class="content">
+                            <h3>Tensorflow</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="icon">
+                            <img src="./assets/img/tech-logos/envoy.png" alt="" width="100" />
+                          </div>
+                          <div class="content">
+                            <h3>Envoy</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- ======== feature-section end ======== -->
+
+
+              <!-- ======== domain-section start ======== -->
+              <section id="domain" class="feature-section pt-120">
+                <div class="container">
+                  <div class="section-title text-center mb-60">
+                    <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                      Our Domain
+                    </h2>
+                  </div>
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Background</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Research Gap</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Research Problem</button>
+                    </li>
+                    <li class="nav-item" role="Objectives">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Objectives" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Objectives</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                      aria-labelledby="pills-home-tab">
+                      <div class="content">
+                        <p>
+                          Making programs portable with containers It's catching on. Docker
+                          is a popular containerization framework. A 2014 open-source container orchestration system.
+                          Public, private or hybrid clouds can run Kubernetes. Google used container orchestration to
+                          scale
+                          highland services. Microservices hype led to widespread containerized software adoption. Cloud
+                          computing has made Microservices a hot topic in Software Engineering. Architecturally,
+                          monolithic
+                          programs were preferred. Microservices architecture has been adopted to take advantage of
+                          cloud
+                          computing . It has also aided the expansion of financial services and streaming services like
+                          Netflix. Database technologies have not been tested due to their complexity and lack of
+                          persistence and consistency in the Kubernetes environment.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <div class="content">
+                        <p>
+                          The need for database scaling in Kubernetes to facilitate high availability, performance, and
+                          best security, as well as efficient use of monitoring solutions for user convenience.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                      <div class="content">
+                        <p>
+                          Kubernetes is a widely used container orchestration technology. But no application's state can
+                          be controlled. As a result, Kubernetes cannot handle stateful applications like databases.
+                          Although databases can be deployed on Kubernetes clusters, scaling them is difficult. The vast
+                          majority of current solutions are unrelated to databases and exclude key factors that should
+                          be included in a scaling mechanism. A scaling mechanism for containerized applications is
+                          required regardless of the technology used.
+
+                          High availability is critical when designing mission-critical systems. Previously, systems
+                          solved this issue by keeping a separate common database for each microservice. This may cause
+                          a system bottleneck or cause a single point of failure. While Kubernetes now has native
+                          scaling, the issue of databases retaining states remains. When scaling a system, extra
+                          considerations must be made. A novel method for scaling while maintaining a balanced workload
+                          distribution among nodes is presented in this study.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Objectives" role="tabpanel"
+                      aria-labelledby="pills-contact-tab">
+                      <div class="content">
+                        <p>
+                          To give developers a highly accessible database that can be used with any application,
+                          regardless of their prior knowledge of Kubernetes, distributed architecture, or deployment
+                          management. A web application on the operator's front-end server allows users to set up a
+                          database cluster, allowing them to quickly get their apps up and running. After configuring
+                          the application to their liking, developers can monitor its health and performance using the
+                          frontend web application's administrative dashboards. As a result, developers will no longer
+                          need to worry about configuring or building a highly available PostgreSQL database on
+                          Kubernetes from scratch. A cloud database is one where the service provider is in charge of
+                          most of the operations and maintenance. Users have no control over database versions, updates,
+                          or scalability. For example, as shown in this study, running a database on Kubernetes gives
+                          greater control over database maintenance while still leveraging the benefits of cloud
+                          computing. Also, when it comes to database management, customers prefer to keep things simple.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- ======== feature-section end ======== -->
+
+              <!-- ======== subscribe-section start ======== -->
+              <section id="contact" class="subscribe-section pt-120">
+                <div class="container">
+
+                  <div class="section-title text-center mb-60">
+                    <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                      Achievements
+                    </h2>
+                  </div>
+                  <!-- Achievement 1 -->
+
+                  <div class="subscribe-wrapper w-100">
+                    <div class="row align-items-center w-100" style="color: white;">
+                      <h3 style="color: whitesmoke;">National Best Quality Software Awards</h3>
+                      <div class="align-items-center">
+                        <img
+                          src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-badge-shopping-and-commerce-flatart-icons-lineal-color-flatarticons-1.png"
+                          width="100" height="100" />
+                      </div>
+
+                      Represented SLIIT and Presented in the National Best Quality Software Awards (NBQSA) 2021
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </section>
+              <!-- ======== subscribe-section end ======== -->
+
+              <!-- ======== team-section start ======== -->
+              <section id="team" class="feature-extended-section pt-100">
+                <div class="feature-extended-wrapper">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
+                        <div class="section-title text-center mb-60">
+                          <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                            Team
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/team/Mr.-Nuwan-Kodagoda.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Dr. Nuwan Kodagoda</h5>
+                              <p class="card-text">Supervisor</p>
+                              <p class="card-text">nuwan.k@sliit.lk</p>
+                              <a href="https://www.linkedin.com/in/nuwan-kodagoda-a4875a4?trk=hp-identity-name"
+                                class="btn btn-primary"><i class="lni lni-linkedin-original"></i></a>
+                              <a href="https://www.sliit.lk/faculty-of-computing/staff/nuwan.k/"
+                                class="btn btn-primary"><i class="lni lni-website"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/team/udara.JPG" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Mr. Udara Samaratunge</h5>
+                              <p class="card-text">Co Supervisor</p>
+                              <p class="card-text">udara.s@sliit.lk</p>
+                              <a href="https://www.linkedin.com/in/UdaraSamaratunge" class="btn btn-primary"><i
+                                  class="lni lni-linkedin-original"></i></a>
+                              <a href="https://www.sliit.lk/faculty-of-computing/staff/udara.s/"
+                                class="btn btn-primary"><i class="lni lni-website"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/team/nilesh.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Mr. Nilesh Jayanandana</h5>
+                              <p class="card-text">External Supervisor</p>
+                              <p class="card-text">nilesh@wso2.com</p>
+                              <a href="https://lk.linkedin.com/in/nilesh93" class="btn btn-primary"><i
+                                  class="lni lni-linkedin-original"></i></a>
+                              <a href="https://wso2.com/about/team/nilesh-jayanandana/" class="btn btn-primary"><i
+                                  class="lni lni-website"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/team/chamod.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Chamod Perera</h5>
+                              <p class="card-text">Team Leader</p>
+                              <p class="card-text">hcsperera@gmail.com</p>
+                              <a href="https://linkedin.com/in/chamodshehanka/" class="btn btn-primary"><i
+                                  class="lni lni-linkedin-original"></i></a>
+                              <a href="https://chamodshehanka.com/" class="btn btn-primary"><i
+                                  class="lni lni-website"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/team/samanthi.jpeg" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Samanthi De Silva</h5>
+                              <p class="card-text">Member</p>
+                              <p class="card-text">samanthi20258@gmail.com</p>
+                              <a href="https://www.linkedin.com/in/samanthi-de-silva-174246148"
+                                class="btn btn-primary"><i class="lni lni-linkedin-original"></i></a>
+                              <a href="#" class="btn btn-primary"><i class="lni lni-website"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/team/dureksha.jpeg" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Dureksha Wasala</h5>
+                              <p class="card-text">Member</p>
+                              <p class="card-text">durekshawasala@gmail.com</p>
+                              <a href="https://www.linkedin.com/in/dureksha-wasala-88a15015a/"
+                                class="btn btn-primary"><i class="lni lni-linkedin-original"></i></a>
+                              <a href="#" class="btn btn-primary"><i class="lni lni-website"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="single-feature-extended">
+                          <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/team/kandu.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Randu Lanka</h5>
+                              <p class="card-text">Member</p>
+                              <p class="card-text">randu612@gmail.com</p>
+                              <a href="https://www.linkedin.com/in/randu-lanka-65b529115/" class="btn btn-primary"><i
+                                  class="lni lni-linkedin-original"></i></a>
+                              <a href="#" class="btn btn-primary"><i class="lni lni-website"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- ======== feature-section end ======== -->
+
+              <!-- ======== Document-section start ======== -->
+              <section id="Document" class="feature-extended-section pt-100">
+                <div class="feature-extended-wrapper">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
+                        <div class="section-title text-center mb-60">
+                          <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                            Documents
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="seven">
+                        <h1>Project Registration Documents</h1>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21900&authkey=AMkmAo9y_OKIE7w&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Project Charter Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21918&authkey=AFMDSQuh8MnSWJU&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Topic Assessment</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 80px;">
+                      <div class="seven">
+                        <h1>Project Proposal</h1>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21892&authkey=ALjDiH1WNKAKG8E&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Proposal Document-Team</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21898&authkey=ABuTF39Rs8BVJeE&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Proposal Presentation</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21894&authkey=ALZNJv5QYAOwR_g&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18004182 -Proposal Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21896&authkey=AILPZYU_sNmvDso&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18113228 -Proposal Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21897&authkey=AM4rsKb1-uKnWDE&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18133400 -Proposal Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21895&authkey=AN8CCQ9SGBdPFds&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18165258 -Proposal Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 80px;">
+                      <div class="seven">
+                        <h1>Status Documents</h1>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21905&authkey=AOnyCPxsX0imyFY&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Status Document -Team</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21906&authkey=AJiGonILUYRa1UU&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18004182 -Status Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21902&authkey=AA2tMentlBCTmhc&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18113228 -Status Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21903&authkey=ALXT2ADMAxcuzTA&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18133400 -Status Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21904&authkey=AAqPxUQgQgxA6qc&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18165258 -Status Document</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 80px;">
+                      <div class="seven">
+                        <h1>Progress Presentations</h1>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21908&authkey=AI41NdWgjemh9OE&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Progress Presentation 1</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21916&authkey=AFj5fc_Rv2V5T6k&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Progress Presentation 2</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21915&authkey=AN4VzhNmATpT9Mw&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Project Poster</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 80px;">
+                      <div class="seven">
+                        <h1>Research Paper</h1>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21917&authkey=AEzSecVWIsawHKQ&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Research Paper</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 80px;">
+                      <div class="seven">
+                        <h1>Final Reports</h1>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21914&authkey=AGL-retlwfhMcN0&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>Final Report - Team</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21910&authkey=ALrfJ7J-fLgHglY&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18004182 -Final Report</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21911&authkey=AByXngF4cgIAhOU&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18113228 -Final Report</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21912&authkey=AF4TLr7MopFosj8&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18133400 -Final Report</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6"
+                        onclick="location.href='https://onedrive.live.com/download?cid=52098C5CECA048D8&resid=52098C5CECA048D8%21913&authkey=AFFOXfqfTI8Zk5k&em=2';">
+                        <div class="single-feature-extended">
+                          <div class="card1 1">
+                            <div class="card_image"> <img src="assets/img/pdf.jpg" /> </div>
+                            <div class="card_title title-white">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3>IT18165258 -Final Report</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+              <!-- ======== document-section end ======== -->
+
+              <!-- ======== footer start ======== -->
+              <footer class="footer">
+                <div class="container">
+                  <div class="widget-wrapper">
+                    <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                          <div class="logo mb-30">
+                            <a href="index.html">
+                              <img src="assets/img/logo/escala-logo.png" alt="Escala logo" width="200" />
+                            </a>
+                          </div>
+                          <p class="desc mb-30 text-white">
+                            Escála is your go-to partner for deploying open source PostgreSQL across your organization.
+                          </p>
+                          <ul class="socials">
+                            <li>
+                              <a href="jvascript:void(0)">
+                                <i class="lni lni-facebook-filled"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="jvascript:void(0)">
+                                <i class="lni lni-twitter-filled"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="jvascript:void(0)">
+                                <i class="lni lni-instagram-filled"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="jvascript:void(0)">
+                                <i class="lni lni-linkedin-original"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                          <h3>About Us</h3>
+                          <ul class="links">
+                            <li><a href="javascript:void(0)">Home</a></li>
+                            <li><a href="javascript:void(0)">Feature</a></li>
+                            <li><a href="javascript:void(0)">About</a></li>
+                            <li><a href="javascript:void(0)">Testimonials</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                          <h3>Features</h3>
+                          <ul class="links">
+                            <li><a href="javascript:void(0)">How it works</a></li>
+                            <li><a href="javascript:void(0)">Privacy policy</a></li>
+                            <li><a href="javascript:void(0)">Terms of service</a></li>
+                            <li><a href="javascript:void(0)">Refund policy</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                          <h3>Other Products</h3>
+                          <ul class="links">
+                            <li><a href="jvascript:void(0)">Accounting Software</a></li>
+                            <li><a href="jvascript:void(0)">Billing Software</a></li>
+                            <li><a href="jvascript:void(0)">Booking System</a></li>
+                            <li><a href="jvascript:void(0)">Tracking System</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              <!-- ======== footer end ======== -->
+
+              <!-- ======== scroll-top ======== -->
+              <a href="#" class="scroll-top btn-hover">
+                <i class="lni lni-chevron-up"></i>
+              </a>
+
+              <!-- ======== JS here ======== -->
+              <script src="assets/js/bootstrap.bundle.min.js"></script>
+              <script src="assets/js/wow.min.js"></script>
+              <script src="assets/js/main.js"></script>
+</body>
+
+</html>
