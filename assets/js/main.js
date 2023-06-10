@@ -20,10 +20,10 @@
 
     if (window.pageYOffset > sticky) {
       header_navbar.classList.add("sticky");
-      logo.src = "assets/img/logo/escala-logo.png";
+      logo.src = "assets/img/logo/kubflow-logo.png";
     } else {
       header_navbar.classList.remove("sticky");
-      logo.src = "assets/img/logo/escala-logo.png";
+      logo.src = "assets/img/logo/kubflow-logo.png";
     }
 
     // show or hide the back-top-top button
